@@ -13,7 +13,7 @@ const Header = ({ data, changeUser }) => {
   }, [data]);
 
   const logOut = () => {
-    localStorage.setItem('loggedInUser', '');
+     localStorage.removeItem('loggedInUser');
     changeUser('');
   };
 
